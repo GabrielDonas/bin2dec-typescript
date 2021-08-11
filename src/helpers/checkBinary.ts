@@ -3,7 +3,7 @@ const checkBinary = (value: string) => {
   if (Number(value) < 0 || !isBinary) {
     return false;
   } else {
-    return Number(value);
+    return value;
   }
 };
 

@@ -3,15 +3,12 @@ import { shallow } from "enzyme";
 import Converter from "./Converter";
 
 describe("The Converter component", () => {
-  let wrapper: any;
-
-  beforeEach(() => {
-    wrapper = shallow(<Converter />);
-  });
+  const wrapper = shallow(<Converter />);
 
   it("Should receive only numbers", () => {
-    wrapper.instance().handleChange("foo");
-    expect(wrapper.state()).toEqual("foo");
+    expect(
+      wrapper.find("input").simulate("change", { target: { value: "123" } })
+    ).toBe("123");
   });
 });
 
