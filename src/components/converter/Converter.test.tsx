@@ -5,11 +5,15 @@ import Converter from "./Converter";
 describe("The Converter component", () => {
   const wrapper = shallow(<Converter />);
 
-  it("Should receive only numbers", () => {
-    expect(
-      wrapper.find("input").simulate("change", { target: { value: "123" } })
-    ).toBe("123");
+  it("Should give a warning with the input is not a binary", () => {
+    wrapper.find("input").simulate("change", { target: { value: "123" } });
+    expect(wrapper.text()).toBe("Wrong Input, please enter either 0 or 1");
+  });
+
+  it("Should return a decimal number if the input is a binary", () => {
+    wrapper
+      .find("input")
+      .simulate("change", { target: { value: "111110000111" } });
+    expect(wrapper.text()).toBe("3975");
   });
 });
-
-//configure an Adapter, look at the Terminal
