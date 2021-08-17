@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Converter component Should render correctly 1`] = `
+<div
+  className="container"
+>
+  <input
+    name="binary"
+    onChange={[Function]}
+    type="number"
+  />
+  <div>
+    
+  </div>
+</div>
+`;

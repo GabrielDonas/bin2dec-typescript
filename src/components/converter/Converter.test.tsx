@@ -1,9 +1,15 @@
 import { shallow } from "enzyme";
+import renderer from "react-test-renderer";
 
 import Converter from "./Converter";
 
 describe("The Converter component", () => {
   const wrapper = shallow(<Converter />);
+  const tree = renderer.create(<Converter />).toJSON();
+
+  it("Should render correctly", () => {
+    expect(tree).toMatchSnapshot();
+  });
 
   it("Should give a warning with the input is not a binary", () => {
     wrapper.find("input").simulate("change", { target: { value: "123" } });
