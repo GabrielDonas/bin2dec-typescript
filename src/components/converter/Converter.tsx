@@ -7,10 +7,8 @@ function Converter() {
   const [output, setOutput] = useState("");
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
-    const userInputValue = checkBinary(e.target.value);
-    if (userInputValue) {
-      const binaryValue = binaryToDecimal(e.target.value);
-      setOutput(binaryValue);
+    if (checkBinary(e.target.value)) {
+      setOutput(binaryToDecimal(e.target.value));
     } else {
       setOutput("Wrong Input, please enter either 0 or 1");
     }
