@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/header/Header";
 import Converter from "./components/converter/Converter";
-import "./reset.css";
+import "./styles/global.css";
 
 function App() {
   return (
