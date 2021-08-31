@@ -1,5 +1,25 @@
+.container {
+  position: absolute;
+  background-color: brown;
+  border-bottom-left-radius: 200%;
+  border-bottom-right-radius: 200%;
+  width: 100vw;
+  z-index: 10;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 200%;
+  background-color: brown;
+  transform: translate(0%, -25%);
+  z-index: -1;
+}
+
 .title {
   text-align: center;
-  font-size: x-large;
-  margin: 1.5rem 0;
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
 }

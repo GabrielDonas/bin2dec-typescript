@@ -9,8 +9,10 @@ exports[`The Converter component Should render correctly 1`] = `
     onChange={[Function]}
     type="number"
   />
-  <div>
-    
+  <div
+    className="result"
+  >
+    0
   </div>
 </div>
 `;

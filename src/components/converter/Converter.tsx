@@ -4,7 +4,7 @@ import checkBinary from "../../helpers/checkBinary";
 import styles from "./converter.module.css";
 
 function Converter() {
-  const [output, setOutput] = useState("");
+  const [output, setOutput] = useState("0");
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     if (checkBinary(e.target.value)) {
@@ -17,7 +17,7 @@ function Converter() {
   return (
     <div className={styles.container}>
       <input type="number" name="binary" onChange={handleChange} />
-      <div>{output}</div>
+      <div className={styles.result}>{output}</div>
     </div>
   );
 }

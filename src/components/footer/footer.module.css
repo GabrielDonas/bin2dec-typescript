@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.gitlogo {
+  font-size: 4rem;
+}

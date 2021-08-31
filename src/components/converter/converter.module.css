@@ -2,4 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10rem 0 5rem 0;
+  background-color: blanchedalmond;
+}
+
+.container input {
+  width: 250px;
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.container input:focus {
+  outline: none;
+}
+
+.result {
+  word-wrap: break-word;
+  margin: 2rem 0;
+  max-width: 250px;
+  font-size: 50px;
 }
