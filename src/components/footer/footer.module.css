@@ -1,9 +1,30 @@
 .container {
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 2rem 0 5rem 0;
+  width: 100%;
+  background-color: black;
+  border-top: 1rem solid red;
+  border-top-right-radius: 600rem;
+  border-top-left-radius: 600rem;
 }
 
 .gitlogo {
   font-size: 4rem;
+  padding: 1rem;
+  background-color: white;
+  border: 3px solid red;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    background-color: black;
+    border-top: 1rem solid red;
+    border-top-right-radius: 1000rem;
+    border-top-left-radius: 1000rem;
+  }
 }

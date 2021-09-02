@@ -21,5 +21,6 @@ function Converter() {
     </div>
   );
 }
+//change the class when not binary
 
 export default Converter;
