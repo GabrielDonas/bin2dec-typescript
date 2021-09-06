@@ -1,5 +1,23 @@
 @import "reset.css";
 
+@font-face {
+  font-weight: 700;
+  font-family: "IBM Plex Sans KR";
+  src: url("./fonts/IBMPlexSansKR-Bold.ttf") format("tff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "IBM Plex Sans KR";
+  src: url("./fonts/IBMPlexSansKR-Regular.ttf") format("tff");
+}
+
+@font-face {
+  font-weight: 100;
+  font-family: "IBM Plex Sans KR";
+  src: url("./fonts/IBMPlexSansKR-Thin.ttf") format("tff");
+}
+
 :root {
   --main-font: #fbf6f0;
   --main-background: #112031;
@@ -14,4 +32,5 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  font-family: "IBM Plex Sans KR", sans-serif;
 }
