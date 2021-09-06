@@ -6,25 +6,32 @@
   bottom: 0;
   padding: 2rem 0 5rem 0;
   width: 100%;
-  background-color: black;
-  border-top: 1rem solid red;
+  background-color: var(--main-background);
+  border-top: 1rem solid #183a60;
   border-top-right-radius: 600rem;
   border-top-left-radius: 600rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    border-top-right-radius: 1000rem;
+    border-top-left-radius: 1000rem;
+  }
 }
 
 .gitlogo {
   font-size: 4rem;
   padding: 1rem;
-  background-color: white;
-  border: 3px solid red;
+  background-color: var(--main-font);
+  border: 3px solid #183a60;
   border-radius: 50px;
+  transition: all 0.3s ease;
 }
 
-@media only screen and (max-width: 600px) {
-  .container {
-    background-color: black;
-    border-top: 1rem solid red;
-    border-top-right-radius: 1000rem;
-    border-top-left-radius: 1000rem;
-  }
+.gitlogo:hover {
+  border: 3px solid #fbf6f0;
+  background-color: black;
+  color: var(--main-font);
+  cursor: pointer;
+  transform: translate(0, -10px);
 }

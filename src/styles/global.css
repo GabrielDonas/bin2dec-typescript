@@ -1,5 +1,12 @@
 @import "reset.css";
 
+:root {
+  --main-font: #fbf6f0;
+  --main-background: #112031;
+  --secondary: #4a4c6f;
+  --dark: #183a60;
+}
+
 html,
 body {
   width: 100vw;
