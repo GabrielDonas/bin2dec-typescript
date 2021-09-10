@@ -14,11 +14,9 @@ function Converter() {
   );
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
-    if (checkBinary(e.target.value)) {
-      setOutput(binaryToDecimal(e.target.value));
-    } else {
-      setOutput(errorMessage);
-    }
+    checkBinary(e.target.value)
+      ? setOutput(binaryToDecimal(e.target.value))
+      : setOutput(errorMessage);
   }
 
   return (
