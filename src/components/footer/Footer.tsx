@@ -4,9 +4,12 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
-    <div className={styles.container}>
+    <a
+      className={styles.container}
+      href="https://github.com/GabrielDonas/bin2dec-typescript"
+    >
       <FontAwesomeIcon className={styles.gitlogo} icon={faGithub} />
-    </div>
+    </a>
   );
 }
 

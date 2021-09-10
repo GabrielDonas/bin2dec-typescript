@@ -13,7 +13,7 @@ describe("The Converter component", () => {
 
   it("Should give a warning with the input is not a binary", () => {
     wrapper.find("input").simulate("change", { target: { value: "123" } });
-    expect(wrapper.text()).toBe("Wrong Input, please enter either 0 or 1");
+    expect(wrapper.text()).toBe("Wrong input, please enter either 0 or 1");
   });
 
   it("Should return a decimal number if the input is a binary", () => {
