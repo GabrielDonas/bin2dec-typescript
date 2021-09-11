@@ -1,4 +1,4 @@
-import React from "react";
+import { Fragment } from "react";
 import "./styles/global.css";
 
 import Converter from "./components/converter/Converter";
@@ -7,11 +7,11 @@ import Header from "./components/header/Header";
 
 function App() {
   return (
-    <React.Fragment>
+    <Fragment>
       <Header title="React Bin2Dec" />
       <Converter />
       <Footer />
-    </React.Fragment>
+    </Fragment>
   );
 }
 

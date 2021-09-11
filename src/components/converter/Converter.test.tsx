@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 
 import Converter from "./Converter";
 
-describe("The Converter component", () => {
+describe("Converter Component", () => {
   const wrapper = shallow(<Converter />);
   const tree = renderer.create(<Converter />).toJSON();
 
