@@ -1,6 +1,6 @@
 # Bin2Dec Converter
 
-[Bin2Dec](https://github.com/facebook/create-react-app) is a binary converter built with TypeScript and React.
+[Bin2Dec](https://gabrieldonas.github.io/bin2dec-typescript/) is a binary converter built with TypeScript and React.
 
 #### `Technologies used`
 
