@@ -22,7 +22,9 @@ function Converter() {
   return (
     <div className={styles.container}>
       <input type="number" name="binary" onChange={handleChange} />
-      <div className={classes}>{output}</div>
+      <div className={classes} data-testid="decimal">
+        {output}
+      </div>
     </div>
   );
 }

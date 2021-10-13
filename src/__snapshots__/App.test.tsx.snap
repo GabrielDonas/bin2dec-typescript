@@ -22,6 +22,7 @@ Array [
     />
     <div
       className="result"
+      data-testid="decimal"
     >
       0
     </div>

@@ -11,6 +11,7 @@ exports[`Converter Component Should render correctly 1`] = `
   />
   <div
     className="result"
+    data-testid="decimal"
   >
     0
   </div>
