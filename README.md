@@ -4,10 +4,11 @@
 
 #### `Technologies used`
 
-| Tech       | Description                             |
-| ---------- | --------------------------------------- |
-| TypeScript | Frontend language                       |
-| React.js   | JS library for building user interfaces |
-| Enzyme     | JS Testing utility for React            |
-| Jest       | Testing framework                       |
-| Husky      | Pre-commit scripts                      |
+| Tech                                                             | Description                             |
+| ---------------------------------------------------------------- | --------------------------------------- |
+| TypeScript                                                       | Frontend language                       |
+| React.js                                                         | JS library for building user interfaces |
+| Enzyme                                                           | JS Testing utility for React            |
+| Jest                                                             | Testing framework                       |
+| [WebdriveIO](https://github.com/GabrielDonas/bin2dec-webdriveio) | Automation framework                    |
+| Husky                                                            | Pre-commit scripts                      |
